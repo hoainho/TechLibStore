@@ -18,7 +18,125 @@
         transform: rotate(270deg);
       }
     }
+    &--heading {
+      position: relative;
+      height: 6rem;
+      background:$color-black;
+      &__slogan {
+        position: absolute;
+        color:$color-white;
+        left:100rem;
+        top:35rem;
+        font-size: 5rem;
+        z-index: 1;
+      }
+      &__slogan1{
+        color:transparent;
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__slogan2{
+        color: $color-secondary;
+        animation : wave 2s ease-in-out infinite;
+        }
+      &__logorun{
+        position: absolute;
+        color:$color-white;
+        left:100rem;
+        top:25rem;
+        font-size: 8rem;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+      &__logorun1:nth-child(1){
+        color:transparent;
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__logorun1:nth-child(2){
+        animation : chuyendongrungvaxoay 8s linear infinite;
+        color: $color-secondary;
+        opacity: 0.7 ;
+        text-shadow: 0 0 2rem $color-secondary-dark,0 0 4rem $color-secondary-dark,0 0 6rem $color-secondary-dark;
+      }
+      &__logorun2:nth-child(3){
+        left : 105rem;
+        color:transparent; 
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__logorun2:nth-child(4){
+        animation : chuyendongrungvaxoay 8s linear infinite;
+        color: $color-secondary;
+        left : 105rem;
+        opacity: 0.6;
+        text-shadow: 0 0 2rem $color-secondary-dark,0 0 4rem $color-secondary-dark,0 0 6rem $color-secondary-dark;
+      }
+      
+      &__logorun3:nth-child(5){
+        left : 110rem;
+        color:transparent; 
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__logorun3:nth-child(6){
+        animation : chuyendongrungvaxoay 8s linear infinite;
+        color: $color-secondary;
+        left : 110rem;
+        opacity: 0.5;
+        text-shadow: 0 0 2rem $color-secondary-dark,0 0 4rem $color-secondary-dark,0 0 6rem $color-secondary-dark;
 
+      }
+      &__logorun4:nth-child(7){
+        left : 115rem;
+        color:transparent; 
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__logorun4:nth-child(8){
+        animation : chuyendongrungvaxoay 8s linear infinite;
+        color: $color-secondary;
+        left : 115rem;
+        opacity: 0.4;
+        text-shadow: 0 0 2rem $color-secondary-dark,0 0 4rem $color-secondary-dark,0 0 6rem $color-secondary-dark;
+
+      }
+      &__logorun5:nth-child(9){
+        left : 125rem;
+        color:transparent; 
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__logorun5:nth-child(10){
+        animation : chuyendongrungvaxoay 8s linear infinite;
+        color: $color-secondary;
+        left : 125rem;
+        opacity: 0.3;
+        text-shadow: 0 0 2rem $color-secondary-dark,0 0 4rem $color-secondary-dark,0 0 6rem $color-secondary-dark;
+
+      }
+      &__logorun6:nth-child(11){
+        left : 130rem;
+        color:transparent; 
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__logorun6:nth-child(12){
+        animation : chuyendongrungvaxoay 8s linear infinite;
+        color: $color-secondary;
+        left : 130rem;
+        opacity: 0.2;
+        text-shadow: 0 0 2rem $color-secondary-dark,0 0 4rem $color-secondary-dark,0 0 6rem $color-secondary-dark;
+
+      }
+      &__logorun7:nth-child(13){
+        left : 133rem;
+        color:transparent; 
+        -webkit-text-stroke:0.1rem $color-secondary;
+        }
+      &__logorun7:nth-child(14){
+        animation : chuyendongrungvaxoay 8s linear infinite;
+        color: $color-secondary;
+        left : 133rem;
+        opacity: 0.1;
+        text-shadow: 0 0 2rem $color-secondary-dark,0 0 4rem $color-secondary-dark,0 0 6rem $color-secondary-dark;
+
+      }
+      
+    }
     &--pic{
         position: absolute;
                 top: 0;
@@ -36,6 +154,7 @@
         width: 10rem;
         height: 10rem;
         transform-style: preserve-3d;
+       
         //animation: zoom 2s linear infinite;
         &__pic {
             position: absolute;
@@ -45,7 +164,8 @@
             height: 100%;
             transform-style: preserve-3d;
             transform: rotateX(-25deg) rotateY(25deg) translate3d(-7.5rem,-5rem,15rem);
-            animation: loop 10s linear infinite;
+            animation: loop 20s linear infinite;
+            &:hover{animation-play-state: paused;}
             &___tech{
                 position: absolute;
                 top: 0;
@@ -56,6 +176,7 @@
                 filter: blur(0);
                 overflow: hidden;
                 transition: all .5s;
+                
             }
 
         }
@@ -201,4 +322,11 @@
 
     }   
     
+}
+.headland{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
