@@ -40,14 +40,15 @@
 .box:hover .face.face2 span {	
 	transform: rotateX(0deg) translateY(0);
 }
-// .box .face.face3 span {
-// 	background: url(../img/tainghe46x4.jpg);
-// 	transform: rotateX(90deg) translateY(50%);
-// 	transform-origin: bottom ;
-// }
-// .box:hover .face.face3 span {	
-// transform: rotateX(0deg) translateY(0);
-// }
+.box .face.face3 span {
+	background: url(../img/tainghe46x4.jpg);
+	transform: rotateX(90deg) translateY(50%);
+	transform-origin: bottom ;
+}
+.box:hover .face.face3 span {	
+	transform: rotateX(0deg) translateY(0);
+	transition-delay: 0.8s;
+}
 // .box .face.face4 span {
 // 	background: url(../img/tainghe56x4.jpg);
 // 	transform: rotateX(90deg) translateY(50%);
