@@ -323,4 +323,27 @@
     }   
     
 }
+.headland-content--text__tittle{
+  position: relative;
+  height: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  top: -15rem;
+  left: -30rem;
+  
+}
+.tittle-sale {
+  top: -5rem;
+  left: 35rem;
+}
+.content-sale {
+  position: absolute;
+  font-size: 1.5rem;
 
+}
+.content-sale:nth-child(1) {
+  transform: translate(35rem,15rem);
+}
+
+  

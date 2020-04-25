@@ -11,6 +11,7 @@
 		position: relative;
 		width: 60rem;
 		height: 40rem;
+		z-index: 100;
 }
 .box .face{
 		position: absolute;
@@ -24,7 +25,8 @@
 		width: 15rem;
 		height: 100%;
 		transition: .7s;
-}	
+}
+	
 .box .face.face1 span {
 		background: url(../img/tainghe26x4.jpg);
 		transform-origin: top;
@@ -40,36 +42,25 @@
 .box:hover .face.face2 span {	
 	transform: rotateX(0deg) translateY(0);
 }
-.box .face.face3 span {
-	background: url(../img/tainghe46x4.jpg);
-	transform: rotateX(90deg) translateY(50%);
-	transform-origin: bottom ;
-}
-.box:hover .face.face3 span {	
-	transform: rotateX(0deg) translateY(0);
-	transition-delay: 0.8s;
-}
-// .box .face.face4 span {
-// 	background: url(../img/tainghe56x4.jpg);
-// 	transform: rotateX(90deg) translateY(50%);
-// 	transform-origin: bottom ;
-// }
-// .box:hover .face.face4 span {	
-// transform: rotateX(0deg) translateY(0);
-//}
 .box .face span:nth-child(1) {
 	background-position-x:0rem;
 	transition-delay:0 ;
+	border-radius:2rem 0 0 2rem ;
 }
 .box .face span:nth-child(2) {
-	background-position-x:-15rem;
+	background-position-x:-12rem;
 	transition-delay:0.2s ;
 }
 .box .face span:nth-child(3) {
-	background-position-x:-30rem;
+	background-position-x:-24rem;
 	transition-delay:0.4s ;
 }
 .box .face span:nth-child(4) {
-	background-position-x:-45rem;
+	background-position-x:-36rem;
 	transition-delay:0.6s ;
+}
+.box .face span:nth-child(5) {
+	background-position-x:-48rem;
+	transition-delay:0.8s ;
+	border-radius:0 2rem 2rem 0 ;
 }
