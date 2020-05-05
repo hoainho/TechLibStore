@@ -90,6 +90,14 @@
   from    {transform: rotateX(0deg) rotateY(0deg);     }
   to      {transform: rotateX(360deg) rotateY(360deg); }
 }
+@keyframes loopX {
+  from    {transform: rotateX(0deg) ; }
+  to      {transform: rotateX(360deg);}
+}
+@keyframes loopY {
+  from    {transform:  rotateY(0deg); }
+  to      {transform:  rotateY(360deg);}
+}
 @keyframes zoom {
   0%    {transform: scale(1);     }
   33%   {transform: scale(1.5);   }
@@ -125,3 +133,22 @@
   100%{clip-path: polygon(0% 56%, 6% 50%, 9% 44%, 18% 37%, 29% 37%, 35% 44%, 39% 56%, 42% 66%, 48% 75%, 59% 82%, 72% 75%, 78% 69%, 84% 60%, 91% 45%, 98% 34%, 100% 99%, 0% 99%);
   }
 }
+@keyframes scale{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(2  );
+    opacity: 0.2;
+  }
+}
+@keyframes shine {
+  0% {background-position: -100%;}
+  100% {background-position: 100%;}
+}
+
